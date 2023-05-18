@@ -3,8 +3,7 @@
 <ul>
   <li><%= @post["description"] %></li>
   <li><%= @post["posted_on"] %></li>
-  <li><%= @post["place_id"] %></li>
-    <li><%= @post["id"] %></li>
+  <li><%= @place["name"] %></li>
 </ul>
 
 <p><%= button_to "Delete this post", @post, :method => "delete" %></p>

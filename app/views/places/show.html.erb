@@ -4,9 +4,12 @@
 
 <p>
 <% for post in @posts %>
-  <% post ["title"]%> <% post ["posted_on"]%>
+  <%= post ["title"]%> 
+  <p> <%= post ["posted_on"]%> </p>
 <% end %>
 </p>
+  <br>
+  </br>
 
 <p>
   <a href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
