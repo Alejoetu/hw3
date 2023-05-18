@@ -1,6 +1,6 @@
 <%= form_with :model => @post do |form| %>
 <p>
-    <%= form.label "title", "New Post" %>
+    <%= form.label "title", "New Title" %>
     <%= form.text_field "title" %>
  </p>
 <p>
@@ -16,7 +16,7 @@
 
   <%= form.submit %>
 
-<p><a href="/places/">Back to places summary</a></p>
+<p><a href="/places/<%= @place["id"] %>">Back to place</a></p>
 
 
 

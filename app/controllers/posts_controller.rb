@@ -22,13 +22,15 @@ class PostsController < ApplicationController
     @post["posted_on"] = params["post"]["posted_on"]
     @post["place_id"] = params["post"]["place_id"]
     @post.save
-    redirect_to "/posts"
+    redirect_to "/places/"
   end
 
   def destroy
     @post = Post.find_by({ "id" => params["id"] })
     @post.destroy
-    redirect_to "/posts"
+    redirect_to "/places"
   end
+
+
 
 end
