@@ -4,7 +4,8 @@
 
 <p>
 <% for post in @posts %>
-  <%= post ["title"]%> 
+      <a href="/posts/<%= post["id"] %>">
+      <%= post["title"] %> </a>
   <p> <%= post ["posted_on"]%> </p>
   <p> <%= post ["description"]%> </p>
     <br>

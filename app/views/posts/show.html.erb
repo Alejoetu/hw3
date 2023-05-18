@@ -8,4 +8,4 @@
 
 <p><%= button_to "Delete this post", @post, :method => "delete" %></p>
 
-<p><a href="/places/">Back to places summary</a></p>
+<p><a href="/places/<%= @place["id"] %>">Back to place</a></p>
